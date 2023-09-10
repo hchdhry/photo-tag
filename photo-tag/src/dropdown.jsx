@@ -8,8 +8,8 @@ function dropDown({position}){
         <div className="dropdown" style={position&&dropdownStyle}>
         <ul>
             <li>wally</li> 
-            <li>wizard</li>
-            <li>andrei</li>
+            <li>bob</li>
+            <li>wanderlei</li>
         
         
         </ul>
