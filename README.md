@@ -38,6 +38,3 @@ If you'd like to contribute to this project, please follow these guidelines:
 
 This project is licensed under the MIT License.
 
-[GitHub Repository](https://github.com/your-username/your-repo-link)
-
-Feel free to customize this further or add more content as needed. Good luck with your project!
