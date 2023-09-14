@@ -15,10 +15,12 @@ var usersRouter = require('./routes/users');
 var app = express();
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
+const { title } = require('process');
 const mongoDB = yee;
 main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
+  console.log("connected");
 }
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -46,7 +48,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error',{title:'Error'});
 });
 
 module.exports = app;
